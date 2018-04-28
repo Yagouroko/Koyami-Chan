@@ -4,6 +4,7 @@ var prefix = "-";
 
 client.on('ready', () => {
     console.log('I am ready!');
+    client.user.setGame("Coucou");
 });
 
 client.on('message', message => {
