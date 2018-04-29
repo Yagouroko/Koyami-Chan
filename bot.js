@@ -5,7 +5,7 @@ var prefix = ("-")
 
 bot.on('message', message => {
     if (message.content === prefix + "help"){
-        message.channel.sendMessage("```Liste des commandes: ``");
+        message.channel.sendMessage("```Liste des commandes: aaa ``");
 
 client.on('ready', () => {
     console.log('I am ready!');
