@@ -1,18 +1,17 @@
 const Discord = require('discord.js');
-
 const client = new Discord.Client();
-
-client.on('ready', () => {
-	client.user.setGame(" -help https://discord.gg/xTR66sm ")
-    console.log('I am ready!');
-});
-
 var prefix = "-";
 
-client.login(process.env.TOKEN);
+client.on('ready', () => {
+    console.log('I am ready!');
+    client.user.setGame("Coucou");
+});
 
 client.on('message', message => {
     if (message.content === '-createur') {
     	message.reply('Yagouroko!');
   	}
 });
+
+// THIS  MUST  BE  THIS  WAY
+client.login(process.env.BOT_TOKEN);
