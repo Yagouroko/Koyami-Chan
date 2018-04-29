@@ -1,10 +1,13 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
-client.on('ready', () => {
-    client.user.setGame("Test")
-    console.log('I am ready!');
+var prefix = (".");
+
+bot.on('ready', function() {
+    bot.user.setGame("Command: .help");
+    console.log("Le bot a bien ete connecte");
 });
+
 
 client.on('message', message => {
     if (message.content === '-ping') {
