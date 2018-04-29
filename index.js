@@ -1,11 +1,9 @@
 const Discord = require('discord.js');
 const client = new Discord.Client();
 
-var prefix = ("-")
-
-bot.on('ready', function() {
-    bot.user.setGame("Command: !help");
-    console.log("Connected");
+client.on('ready', () => {
+    bot.user.setGame("Command: -help");
+    console.log('I am ready!');
 });
 
 client.on('message', message => {
