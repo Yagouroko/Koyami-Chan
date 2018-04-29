@@ -3,8 +3,8 @@ const client = new Discord.Client();
 var prefix = "-"
 
 client.on('ready', () => {
-	client.user.setGame(" -help https://discord.gg/xTR66sm ")
-    console.log('I am ready!');
+client.user.setGame(" -help https://discord.gg/xTR66sm ")
+console.log('I am ready!');
 });
 
 client.on('message', message => {
